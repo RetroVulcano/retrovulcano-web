@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Retrovulcano — tecnología, historia, videojuegos retro y software libre.">
+  <title>Retrovulcano | Tecnología, historia y videojuegos retro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#inicio" aria-label="Retrovulcano inicio">
+        <span class="brand-mark">R</span>
+        <span>RETRO<span>VULCANO</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#blogs">Mis blogs</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">TECNOLOGÍA · HISTORIA · RETRO</p>
+        <h1>Un rincón donde<br><span>lo clásico sigue vivo.</span></h1>
+        <p class="lead">
+          Soy Retrovulcano. Escribo sobre tecnología, historia, sistemas complejos,
+          videojuegos clásicos y el mundo que hay detrás de todo ello.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#blogs">Explorar mis blogs <span>→</span></a>
+          <a class="button ghost" href="#sobre-mi">Conóceme</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="grid"></div>
+        <div class="orb"></div>
+        <div class="sun"></div>
+        <div class="scan"></div>
+        <div class="terminal">
+          <span>&gt; power_on</span>
+          <span>&gt; retrovulcano</span>
+          <span class="accent">_</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="blogs" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">PROYECTOS</p>
+        <h2>Mis blogs</h2>
+        <p>Dos espacios diferentes, unidos por la curiosidad.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card card-orange">
+          <div class="card-number">01</div>
+          <div class="icon">◎</div>
+          <h3>Orbe Automata</h3>
+          <p>Tecnología, historia y sistemas complejos para entender cómo funciona el mundo.</p>
+          <a href="https://www.orbeautomata.es/" target="_blank" rel="noopener">Visitar Orbe Automata <span>↗</span></a>
+        </article>
+
+        <article class="card card-dark">
+          <div class="card-number">02</div>
+          <div class="icon">▣</div>
+          <h3>Pulsa y Juega</h3>
+          <p>La historia de los videojuegos clásicos de consolas y microordenadores de 8 bits.</p>
+          <a href="https://pulsayjuega.blog/" target="_blank" rel="noopener">Visitar Pulsa y Juega <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">SOBRE MÍ</p>
+          <h2>Curiosidad por<br><span>todo lo que funciona.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Técnico en gestión comercial y marketing digital. Usuario de GNU/Linux
+            y defensor del software libre.
+          </p>
+          <p>
+            En mis ratos libres escribo, investigo y comparto contenidos sobre
+            tecnología, historia y videojuegos retro.
+          </p>
+          <div class="tags">
+            <span>GNU/Linux</span><span>Historia</span><span>Ciencia</span>
+            <span>Videojuegos retro</span><span>LEGO</span><span>Manga</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact container">
+      <div>
+        <p class="eyebrow">EN LA RED</p>
+        <h2>Seguimos conectados.</h2>
+      </div>
+      <a class="social" href="https://tkz.one/@retrovulcano" target="_blank" rel="me noopener">
+        <span>Mastodon</span><span>↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Retrovulcano</span>
+      <span>Hecho con HTML + CSS · alojado en GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
