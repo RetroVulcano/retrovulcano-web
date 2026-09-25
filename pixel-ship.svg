@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" shape-rendering="crispEdges">
+<rect width="320" height="160" fill="none"/>
+<!-- engine glow -->
+<rect x="18" y="70" width="22" height="20" fill="#ff5a36"/>
+<rect x="5" y="76" width="13" height="8" fill="#ffb52e"/>
+<rect x="38" y="74" width="15" height="12" fill="#e6ff3f"/>
+<!-- rear -->
+<rect x="50" y="52" width="30" height="56" fill="#aeb4bc"/>
+<rect x="58" y="44" width="18" height="72" fill="#d9dde0"/>
+<!-- main fuselage -->
+<rect x="76" y="36" width="132" height="88" fill="#f2f0e8"/>
+<rect x="92" y="28" width="88" height="104" fill="#f2f0e8"/>
+<rect x="108" y="20" width="56" height="120" fill="#f2f0e8"/>
+<!-- nose -->
+<rect x="164" y="36" width="32" height="88" fill="#d0d5da"/>
+<rect x="196" y="52" width="30" height="56" fill="#aeb4bc"/>
+<rect x="226" y="68" width="20" height="24" fill="#7f878e"/>
+<!-- cockpit -->
+<rect x="116" y="38" width="48" height="38" fill="#1a758b"/>
+<rect x="124" y="30" width="32" height="8" fill="#67e9ff"/>
+<rect x="124" y="46" width="32" height="22" fill="#59d9ef"/>
+<rect x="132" y="46" width="24" height="8" fill="#b9f7ff"/>
+<!-- wings -->
+<rect x="72" y="100" width="48" height="20" fill="#8f969d"/>
+<rect x="56" y="112" width="64" height="12" fill="#8f969d"/>
+<rect x="164" y="100" width="48" height="20" fill="#8f969d"/>
+<rect x="164" y="112" width="64" height="12" fill="#8f969d"/>
+<!-- wing tips -->
+<rect x="48" y="116" width="16" height="8" fill="#e6ff3f"/>
+<rect x="224" y="116" width="16" height="8" fill="#e6ff3f"/>
+<!-- details -->
+<rect x="84" y="84" width="20" height="12" fill="#e6ff3f"/>
+<rect x="172" y="84" width="20" height="12" fill="#e6ff3f"/>
+<rect x="204" y="60" width="8" height="8" fill="#e6ff3f"/>
+</svg>
