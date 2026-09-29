@@ -268,10 +268,13 @@ footer{padding:27px 0;color:#7a9391;font-size:.7rem;border-top:1px solid #17353d
     radial-gradient(circle at 28% 78%,rgba(57,255,182,.65) 0 2px,transparent 3px)
 }
 .pixel-ship{
-  width:310px;height:auto;
+  display:block;width:310px;height:auto;
   filter:drop-shadow(0 0 18px rgba(0,229,212,.22));
+  will-change:transform;
+  -webkit-animation:shipFloat 3.8s ease-in-out infinite;
   animation:shipFloat 3.8s ease-in-out infinite
 }
+@-webkit-keyframes shipFloat{0%,100%{-webkit-transform:translateY(0)}50%{-webkit-transform:translateY(-9px)}}
 @keyframes shipFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 
 /* Hover solo en dispositivos con puntero (evita "hover pegado" en táctil) */
