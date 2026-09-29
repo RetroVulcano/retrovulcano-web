@@ -65,7 +65,10 @@
 /* Mobile motion: the spaceship remains animated on touch devices. */
 .pixel-ship{will-change:transform;animation:shipFloat 3.8s ease-in-out infinite!important}
 @media (prefers-reduced-motion: reduce){
-  .pixel-ship{animation:shipFloat 6s ease-in-out infinite!important}
+  .pixel-ship,
+  .pixel-ship *{
+    animation:none!important;
+  }
 }
 @media (max-width:520px){
   .pixel-ship{animation:shipFloatMobile 3.2s ease-in-out infinite!important;will-change:transform}
