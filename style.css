@@ -224,6 +224,7 @@ header{
 
 .terminal small{color:var(--lime)}
 
+
 .section{padding:120px 0}
 
 .label{
@@ -289,6 +290,12 @@ header{
   border:1px solid var(--line);
   overflow:hidden;
   position:relative;
+  transition:transform .25s ease,border-color .25s ease;
+}
+
+.project:hover,.project:focus-visible{
+  transform:translateY(-6px);
+  border-color:var(--lime2);
 }
 
 .project:after{
@@ -401,6 +408,10 @@ header{
   color:var(--lime);
   font:500 .68rem 'DM Mono',ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
 }
+
+.universe article:nth-child(2) span{color:#ffc145}
+.universe article:nth-child(3) span{color:#ff5d73}
+.universe article:nth-child(4) span{color:#b48cff}
 
 .universe h3{
   font-size:1rem;
@@ -539,4 +550,6 @@ footer{
 
 @media(prefers-reduced-motion:reduce){
   .links{scroll-behavior:auto}
+  .project{transition:none}
+  .project:hover,.project:focus-visible{transform:none}
 }
