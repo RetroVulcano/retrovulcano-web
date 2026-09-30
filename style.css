@@ -122,7 +122,7 @@ header{
 
 .hero-copy{position:relative;z-index:2}
 
-.kicker,.label,.project-top,.project-bottom,.hud,.terminal,footer{
+.kicker,.label,.project-top,.project-bottom,.hud,footer{
   font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
 }
 
@@ -203,26 +203,8 @@ header{
 
 .hud span:last-child{color:var(--lime)}
 
-.terminal{
-  position:absolute;
-  bottom:8px;
-  right:-5px;
-  background:#0c0f10;
-  border:1px solid var(--line);
-  padding:17px 20px;
-  width:250px;
-  color:#6f7679;
-  font-size:.68rem;
-  line-height:1.9;
-  box-shadow:0 15px 40px #0008;
-}
 
-.terminal strong{
-  color:var(--lime);
-  font-weight:400;
-}
 
-.terminal small{color:var(--lime)}
 
 
 .section{padding:120px 0}
@@ -543,7 +525,6 @@ footer{
 @media(max-width:520px){
   .universe{grid-template-columns:1fr}
   .project{min-height:460px}
-  .terminal{right:0}
   .foot{flex-direction:column}
   .hero-console{height:330px}
 }
