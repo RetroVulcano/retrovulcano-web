@@ -474,8 +474,6 @@ footer{
   gap:20px;
 }
 
-/* The SVG contains its own character-by-character animation.
-   Do not animate the <img> itself: that would move the complete scene. */
 .pixel-ship-wrap{
   position:relative;
   width:min(430px,100%);
@@ -490,9 +488,8 @@ footer{
 }
 
 .pixel-ship{
-  width:310px;
+  width:277px;
   height:auto;
-  image-rendering:pixelated;
   filter:drop-shadow(0 0 18px rgba(223,255,54,.22));
 }
 
@@ -527,7 +524,7 @@ footer{
   .mastodon{width:100%;min-width:0}
   .section{padding:85px 0}
   .pixel-ship-wrap{height:270px}
-  .pixel-ship{width:260px}
+  .pixel-ship{width:232px}
   .social-links{min-width:0;width:100%}
   .bluesky,.mastodon{min-width:0;width:100%}
 }
