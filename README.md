@@ -18,5 +18,5 @@ Sitio: https://retrovulcano.es/
 ## Efectos añadidos
 
 - **Dragón pixel art**: sprite de 24x16 píxeles más 16 columnas de fuego, dibujado en código (`script.js`, canvas `#dragon`). Cruza la cabecera y cada 5 s escupe fuego. Con `prefers-reduced-motion` se queda quieto.
-- **Círculo zodiacal giratorio**: anillo SVG con los 12 signos del zodiaco en pixel art (13×13 px cada uno, `#zodiaco` en `index.html`) que gira lentamente detrás del caballero (`.halo` en `style.css`, 70 s por vuelta).
+- **Círculo giratorio del caldero**: anillo SVG con los 7 objetos del caldero de Knight Lore en pixel art (bota, botella, bola de cristal, gema, grial, veneno y taza de té; 15×15 px cada uno, `#caldero` en `index.html`) que gira lentamente detrás del caballero (`.halo` en `style.css`, 70 s por vuelta).
 - **Móvil y accesibilidad**: la animación respeta `prefers-reduced-motion` (muchos móviles lo activan con el ahorro de batería o "Quitar animaciones"). Para forzarla al probar, abre la web con `?anim=1`. En pantallas ≤850 px el dragón va a ~30 fps, se pausa cuando la cabecera no está visible y se desactivan el ruido de fondo y el desenfoque del menú.
