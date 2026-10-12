@@ -19,3 +19,5 @@ Sitio: https://retrovulcano.es/
 
 - **Círculo giratorio del caldero**: anillo SVG con los 7 objetos del caldero de Knight Lore en pixel art (bota, botella, bola de cristal, gema, grial, veneno y taza de té; 15×15 px cada uno, `#caldero` en `index.html`) que gira lentamente detrás del caballero (`.halo` en `style.css`, 70 s por vuelta).
 - **Móvil y accesibilidad**: el giro del círculo respeta `prefers-reduced-motion` (muchos móviles lo activan con el ahorro de batería o "Quitar animaciones"). En pantallas ≤850 px se desactivan el ruido de fondo y el desenfoque del menú para ir más fluido.
+- **Menú superior**: cada opción usa el color de su universo (cian, ámbar, rosa y violeta; variables `--c1`…`--c4` en `style.css`). La sección visible se marca con `aria-current` y un cursor de terminal parpadeante a su izquierda (`script.js`). Con `prefers-reduced-motion` el cursor queda fijo.
+- **Accesibilidad**: enlace "Saltar al contenido", navegación etiquetada e imágenes con dimensiones declaradas.
