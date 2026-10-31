@@ -10,14 +10,15 @@ Sitio: https://retrovulcano.es/
 - `favicon.svg`, `pixel-ship.png`, `orbeautomata.jpg`, `pulsayjuega.jpg`: recursos gráficos.
 - `PRIVACIDAD.md`: recursos externos, cookies y rastreo (no hay).
 
+## Diseño
+
+- **Paleta**: azul índigo de fondo con cuadrícula de puntos y cuatro colores de acento, los de los universos (cian, ámbar, coral y violeta; variables `--c1`…`--c4`).
+- **Titular en pixel art**: "Pasado. Presente. Futuro." se dibuja con una fuente 5×7 propia (`script.js`) y aparece "tecleado" al cargar. Sin JavaScript se muestra como texto normal.
+- **Pantalla CRT**: marco con barra de ventana y franja de colores tipo ZX Spectrum; dentro, el caballero con el círculo giratorio de los 7 objetos del caldero de Knight Lore (`#caldero` en `index.html`, 70 s por vuelta).
+- **Menú**: cada opción usa el color de su universo y la sección visible se marca con `aria-current` y un cursor de terminal parpadeante.
+- **Accesibilidad y móvil**: enlace "Saltar al contenido", foco visible y `prefers-reduced-motion` respetado (sin giro, sin tecleado y cursor fijo).
+
 ## Créditos y licencias
 
 - **`pixel-ship.png`**: ilustración del caballero generada con IA (ChatGPT).
 - El resto de recursos gráficos y textos son propios del autor del sitio.
-
-## Efectos añadidos
-
-- **Círculo giratorio del caldero**: anillo SVG con los 7 objetos del caldero de Knight Lore en pixel art (bota, botella, bola de cristal, gema, grial, veneno y taza de té; 15×15 px cada uno, `#caldero` en `index.html`) que gira lentamente detrás del caballero (`.halo` en `style.css`, 70 s por vuelta).
-- **Móvil y accesibilidad**: el giro del círculo respeta `prefers-reduced-motion` (muchos móviles lo activan con el ahorro de batería o "Quitar animaciones"). En pantallas ≤850 px se desactivan el ruido de fondo y el desenfoque del menú para ir más fluido.
-- **Menú superior**: cada opción usa el color de su universo (cian, ámbar, rosa y violeta; variables `--c1`…`--c4` en `style.css`). La sección visible se marca con `aria-current` y un cursor de terminal parpadeante a su izquierda (`script.js`). Con `prefers-reduced-motion` el cursor queda fijo.
-- **Accesibilidad**: enlace "Saltar al contenido", navegación etiquetada e imágenes con dimensiones declaradas.
