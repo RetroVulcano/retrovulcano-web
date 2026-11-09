@@ -14,7 +14,7 @@ header{position:sticky;top:0;z-index:40;background:rgba(15,18,38,.86);-webkit-ba
 .nav{height:72px;display:flex;align-items:center;justify-content:space-between}
 .logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.08rem;letter-spacing:.01em}
 .logo b{color:var(--c1)}
-.sigil{width:38px;height:38px;display:grid;place-items:center;border-radius:9px;background:var(--c1);color:var(--ink);font:700 .78rem var(--mono)}
+.sigil{display:block;width:auto;height:44px}
 .links{display:flex;gap:18px;font-size:.95rem;font-weight:600}
 .links a{position:relative;padding:8px 0 8px 17px;color:var(--c);transition:filter .2s,text-shadow .2s}
 .links a:nth-child(1){--c:var(--c1)}
@@ -119,6 +119,7 @@ footer{margin-top:96px;padding:28px 0;border-top:2px solid var(--line);color:var
   .hero h1{--u:min(1.7vw,11px)}
   .crt{box-shadow:8px 8px 0 var(--c3)}
   .screen{height:340px}
+  .project{min-height:380px}
   .section,.contact{padding-top:72px}
   .two,.project-grid{grid-template-columns:1fr;gap:40px}
   .universe{grid-template-columns:1fr 1fr}
@@ -128,9 +129,7 @@ footer{margin-top:96px;padding:28px 0;border-top:2px solid var(--line);color:var
 }
 @media(max-width:520px){.universe{grid-template-columns:1fr}.universe article{min-height:200px}}
 @media(prefers-reduced-motion:reduce){
-  .halo svg,.px svg,.links a[aria-current]:before{animation:none}
+  .halo svg,.px svg,.project img,.links a[aria-current]:before{animation:none}
   .project,.btn,.links a,.social-links a{transition:none}
   .project:hover,.social-links a:hover{transform:none}
 }
-@media(max-width:850px){.project{min-height:380px}}
-@media(prefers-reduced-motion:reduce){.project img{animation:none}}
