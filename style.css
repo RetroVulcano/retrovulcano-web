@@ -52,7 +52,8 @@ header{position:sticky;top:0;z-index:40;background:rgba(15,18,38,.86);-webkit-ba
 .bar em{margin-left:auto;font-style:normal;color:var(--c1)}
 .screen{position:relative;height:410px;display:grid;place-items:center;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 2px,transparent 2px 4px)}
 .halo{position:absolute;left:50%;top:50%;width:min(86%,340px);aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none}
-.halo svg{width:100%;height:100%;opacity:.6;animation:gira 70s linear infinite}
+.halo svg{width:100%;height:100%;overflow:visible;opacity:.9;animation:gira 70s linear infinite}
+.halo .e{animation:gira 70s linear infinite reverse}
 @keyframes gira{to{transform:rotate(360deg)}}
 .pixel-ship{position:relative;z-index:1;width:230px;height:auto;filter:drop-shadow(0 0 16px rgba(41,230,214,.25))}
 .stripes{height:12px;background:linear-gradient(90deg,var(--c3) 0 25%,var(--c2) 0 50%,var(--c1) 0 75%,var(--c4) 0)}
@@ -129,7 +130,7 @@ footer{margin-top:96px;padding:28px 0;border-top:2px solid var(--line);color:var
 }
 @media(max-width:520px){.universe{grid-template-columns:1fr}.universe article{min-height:200px}}
 @media(prefers-reduced-motion:reduce){
-  .halo svg,.px svg,.project img,.links a[aria-current]:before{animation:none}
+  .halo svg,.halo .e,.px svg,.project img,.links a[aria-current]:before{animation:none}
   .project,.btn,.links a,.social-links a{transition:none}
   .project:hover,.social-links a:hover{transform:none}
 }
